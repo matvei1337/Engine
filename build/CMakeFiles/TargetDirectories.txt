@@ -1,0 +1,8 @@
+/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles/edit_cache.dir
+/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles/rebuild_cache.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Core/CMakeFiles/SimpleCore.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Core/CMakeFiles/edit_cache.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Core/CMakeFiles/rebuild_cache.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Editor/CMakeFiles/SimpleEditor.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Editor/CMakeFiles/edit_cache.dir
+/home/matvei228/Рабочий стол/3D_Game/build/Editor/CMakeFiles/rebuild_cache.dir

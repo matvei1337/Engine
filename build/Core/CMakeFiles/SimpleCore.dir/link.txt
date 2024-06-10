@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSimpleCore.a CMakeFiles/SimpleCore.dir/src/SimpleCore/Utils/test.cpp.o
+/usr/bin/ranlib libSimpleCore.a
