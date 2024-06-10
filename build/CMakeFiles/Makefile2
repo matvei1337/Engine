@@ -82,15 +82,67 @@ clean: Editor/clean
 
 # Recursive "all" directory target.
 Core/all: Core/CMakeFiles/SimpleCore.dir/all
+Core/all: Core/glfw/all
 .PHONY : Core/all
 
 # Recursive "preinstall" directory target.
-Core/preinstall:
+Core/preinstall: Core/glfw/preinstall
 .PHONY : Core/preinstall
 
 # Recursive "clean" directory target.
 Core/clean: Core/CMakeFiles/SimpleCore.dir/clean
+Core/clean: Core/glfw/clean
 .PHONY : Core/clean
+
+#=============================================================================
+# Directory level rules for directory Core/glfw
+
+# Recursive "all" directory target.
+Core/glfw/all: Core/glfw/src/all
+Core/glfw/all: Core/glfw/docs/all
+.PHONY : Core/glfw/all
+
+# Recursive "preinstall" directory target.
+Core/glfw/preinstall: Core/glfw/src/preinstall
+Core/glfw/preinstall: Core/glfw/docs/preinstall
+.PHONY : Core/glfw/preinstall
+
+# Recursive "clean" directory target.
+Core/glfw/clean: Core/glfw/CMakeFiles/uninstall.dir/clean
+Core/glfw/clean: Core/glfw/src/clean
+Core/glfw/clean: Core/glfw/docs/clean
+.PHONY : Core/glfw/clean
+
+#=============================================================================
+# Directory level rules for directory Core/glfw/docs
+
+# Recursive "all" directory target.
+Core/glfw/docs/all:
+.PHONY : Core/glfw/docs/all
+
+# Recursive "preinstall" directory target.
+Core/glfw/docs/preinstall:
+.PHONY : Core/glfw/docs/preinstall
+
+# Recursive "clean" directory target.
+Core/glfw/docs/clean:
+.PHONY : Core/glfw/docs/clean
+
+#=============================================================================
+# Directory level rules for directory Core/glfw/src
+
+# Recursive "all" directory target.
+Core/glfw/src/all: Core/glfw/src/CMakeFiles/glfw.dir/all
+.PHONY : Core/glfw/src/all
+
+# Recursive "preinstall" directory target.
+Core/glfw/src/preinstall:
+.PHONY : Core/glfw/src/preinstall
+
+# Recursive "clean" directory target.
+Core/glfw/src/clean: Core/glfw/src/CMakeFiles/glfw.dir/clean
+Core/glfw/src/clean: Core/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : Core/glfw/src/clean
 
 #=============================================================================
 # Directory level rules for directory Editor
@@ -111,7 +163,7 @@ Editor/clean: Editor/CMakeFiles/SimpleEditor.dir/clean
 # Target rules for target Core/CMakeFiles/SimpleCore.dir
 
 # All Build rule for target.
-Core/CMakeFiles/SimpleCore.dir/all:
+Core/CMakeFiles/SimpleCore.dir/all: Core/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/SimpleCore.dir/build.make Core/CMakeFiles/SimpleCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/SimpleCore.dir/build.make Core/CMakeFiles/SimpleCore.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" --progress-num=1,2 "Built target SimpleCore"
@@ -119,7 +171,7 @@ Core/CMakeFiles/SimpleCore.dir/all:
 
 # Build rule for subdir invocation for target.
 Core/CMakeFiles/SimpleCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 47
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/CMakeFiles/SimpleCore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
 .PHONY : Core/CMakeFiles/SimpleCore.dir/rule
@@ -134,9 +186,88 @@ Core/CMakeFiles/SimpleCore.dir/clean:
 .PHONY : Core/CMakeFiles/SimpleCore.dir/clean
 
 #=============================================================================
+# Target rules for target Core/glfw/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+Core/glfw/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/CMakeFiles/uninstall.dir/build.make Core/glfw/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f Core/glfw/CMakeFiles/uninstall.dir/build.make Core/glfw/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" --progress-num= "Built target uninstall"
+.PHONY : Core/glfw/CMakeFiles/uninstall.dir/all
+
+# Build rule for subdir invocation for target.
+Core/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/glfw/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
+.PHONY : Core/glfw/CMakeFiles/uninstall.dir/rule
+
+# Convenience name for target.
+uninstall: Core/glfw/CMakeFiles/uninstall.dir/rule
+.PHONY : uninstall
+
+# clean rule for target.
+Core/glfw/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/CMakeFiles/uninstall.dir/build.make Core/glfw/CMakeFiles/uninstall.dir/clean
+.PHONY : Core/glfw/CMakeFiles/uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target Core/glfw/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+Core/glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/glfw.dir/build.make Core/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/glfw.dir/build.make Core/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target glfw"
+.PHONY : Core/glfw/src/CMakeFiles/glfw.dir/all
+
+# Build rule for subdir invocation for target.
+Core/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 45
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/glfw/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
+.PHONY : Core/glfw/src/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: Core/glfw/src/CMakeFiles/glfw.dir/rule
+.PHONY : glfw
+
+# clean rule for target.
+Core/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/glfw.dir/build.make Core/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : Core/glfw/src/CMakeFiles/glfw.dir/clean
+
+#=============================================================================
+# Target rules for target Core/glfw/src/CMakeFiles/update_mappings.dir
+
+# All Build rule for target.
+Core/glfw/src/CMakeFiles/update_mappings.dir/all:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/update_mappings.dir/build.make Core/glfw/src/CMakeFiles/update_mappings.dir/depend
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/update_mappings.dir/build.make Core/glfw/src/CMakeFiles/update_mappings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" --progress-num=50 "Built target update_mappings"
+.PHONY : Core/glfw/src/CMakeFiles/update_mappings.dir/all
+
+# Build rule for subdir invocation for target.
+Core/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/glfw/src/CMakeFiles/update_mappings.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
+.PHONY : Core/glfw/src/CMakeFiles/update_mappings.dir/rule
+
+# Convenience name for target.
+update_mappings: Core/glfw/src/CMakeFiles/update_mappings.dir/rule
+.PHONY : update_mappings
+
+# clean rule for target.
+Core/glfw/src/CMakeFiles/update_mappings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Core/glfw/src/CMakeFiles/update_mappings.dir/build.make Core/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : Core/glfw/src/CMakeFiles/update_mappings.dir/clean
+
+#=============================================================================
 # Target rules for target Editor/CMakeFiles/SimpleEditor.dir
 
 # All Build rule for target.
+Editor/CMakeFiles/SimpleEditor.dir/all: Core/glfw/src/CMakeFiles/glfw.dir/all
 Editor/CMakeFiles/SimpleEditor.dir/all: Core/CMakeFiles/SimpleCore.dir/all
 	$(MAKE) $(MAKESILENT) -f Editor/CMakeFiles/SimpleEditor.dir/build.make Editor/CMakeFiles/SimpleEditor.dir/depend
 	$(MAKE) $(MAKESILENT) -f Editor/CMakeFiles/SimpleEditor.dir/build.make Editor/CMakeFiles/SimpleEditor.dir/build
@@ -145,7 +276,7 @@ Editor/CMakeFiles/SimpleEditor.dir/all: Core/CMakeFiles/SimpleCore.dir/all
 
 # Build rule for subdir invocation for target.
 Editor/CMakeFiles/SimpleEditor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Editor/CMakeFiles/SimpleEditor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" 0
 .PHONY : Editor/CMakeFiles/SimpleEditor.dir/rule

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/matvei228/Рабочий стол/3D_Game/Core/includes"
+CXX_INCLUDES = -I"/home/matvei228/Рабочий стол/3D_Game/Core/includes" -I"/home/matvei228/Рабочий стол/3D_Game/external/glfw/include"
 
 CXX_FLAGS = 
 

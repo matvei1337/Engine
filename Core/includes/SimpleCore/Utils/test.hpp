@@ -1,5 +1,5 @@
 #include <iostream>
 
 namespace Engine{
-	void sayHello();
+	int sayHello();
 }

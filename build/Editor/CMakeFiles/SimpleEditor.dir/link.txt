@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SimpleEditor.dir/src/main.cpp.o -o ../bin/SimpleEditor  ../Core/libSimpleCore.a 
+/usr/bin/c++ CMakeFiles/SimpleEditor.dir/src/main.cpp.o -o ../bin/SimpleEditor  ../Core/libSimpleCore.a ../Core/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 

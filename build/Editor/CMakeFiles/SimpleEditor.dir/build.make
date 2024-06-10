@@ -93,6 +93,9 @@ SimpleEditor_EXTERNAL_OBJECTS =
 bin/SimpleEditor: Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o
 bin/SimpleEditor: Editor/CMakeFiles/SimpleEditor.dir/build.make
 bin/SimpleEditor: Core/libSimpleCore.a
+bin/SimpleEditor: Core/glfw/src/libglfw3.a
+bin/SimpleEditor: /usr/lib/x86_64-linux-gnu/librt.a
+bin/SimpleEditor: /usr/lib/x86_64-linux-gnu/libm.so
 bin/SimpleEditor: Editor/CMakeFiles/SimpleEditor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/matvei228/Рабочий стол/3D_Game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/SimpleEditor"
 	cd "/home/matvei228/Рабочий стол/3D_Game/build/Editor" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleEditor.dir/link.txt --verbose=$(VERBOSE)

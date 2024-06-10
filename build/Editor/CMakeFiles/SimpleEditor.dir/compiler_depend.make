@@ -3,6 +3,7 @@
 
 Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
   /usr/include/stdc-predef.h \
+  ../Core/includes/SimpleCore/Utils/test.hpp \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -253,6 +254,8 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 
 /usr/include/c++/11/bits/functional_hash.h:
 
+/usr/include/c++/11/string_view:
+
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/ctype.h:
@@ -280,8 +283,6 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/c++/11/string_view:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -361,6 +362,8 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
 /usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
@@ -368,8 +371,6 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 /usr/include/features.h:
 
 /usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -384,6 +385,12 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+../Core/includes/SimpleCore/Utils/test.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -433,9 +440,9 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/c++/11/bits/stl_iterator.h:
-
 /usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -496,10 +503,6 @@ Editor/CMakeFiles/SimpleEditor.dir/src/main.cpp.o: ../Editor/src/main.cpp \
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
